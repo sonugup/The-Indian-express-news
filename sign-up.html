@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body{
+            background-color: skyblue;
+            background-image:"https://tse3.mm.bing.net/th?id=OIP.m0d8EvwlT5xQ3A-2epZa8AHaEo&pid=Api&P=0&w=273&h=171";
+        }
+        #form{
+            width: 40%;
+            margin:20px auto;
+           background-color: greenyellow;
+           border-radius: 30px;
+            height: 600px;
+            display: grid;
+            padding: 50px;
+            color: blueviolet;text-align: center;
+           
+        }
+        #form>input{
+            margin: 20px;
+            border-radius: 20px;
+            font-size: 25px;
+            background-color: wheat;
+        }
+        a{
+            text-align: center;
+            text-decoration: none;
+            font-size: 30px;
+            color: black;
+           }
+           a:hover{
+               color: blue;
+               
+           }
+    </style>
+</head>
+<body>
+    <form id="form">
+        <h1>Sign Up Pase</h1>
+        <input id="user" type="text" placeholder="User Name">
+        <input id="email" type="email" placeholder="Enter Email">
+        <input id="pass" type="password" placeholder="Enter Password">
+        <input id="sum" type="submit" placeholder="Sign Up">
+        <a href="sign-in.html">Go to sign In Pase</a>
+    </form>
+</body>
+</html>
+<script>
+    var form=document.querySelector("form");
+
+    form.addEventListener("submit", function(event){
+         
+        event.preventDefault();
+        var data={
+            username:form.user.value,
+            email:form.email.value,
+            password:form.pass.value,
+        }
+        localStorage.setItem("userData", JSON.stringify(data))
+    })
+</script>

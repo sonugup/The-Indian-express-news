@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explained</title>
+    <style>
+        #men-expres{
+            display: flex;
+            margin: auto;
+            width: 80%;
+            gap: 30px;
+            padding: 20px;
+        }
+        .manexp{
+            width: 90%;
+            margin: auto;
+        }
+        .exs-im{
+            margin-left:90px ;
+        }
+        .expres-a{
+            padding: 10px;
+            display: flex;
+            gap: 15px;
+        }
+        .expres-a>a{
+            text-decoration: none;
+            color: black;
+            
+        }
+        .red{
+            color: red;
+        }
+        #contor{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            gap: 40px;
+            font-size: 23px;
+            line-height: 40px;
+            padding: 30px;
+            margin: auto;
+        }
+        #contor>div>p{
+            cursor: pointer;
+
+        }
+        #contor>div>p:hover{
+            color: red;
+        }
+        .expl{
+            position: fixed;
+            margin-left: -100px;
+        }
+        .expr{
+            position: fixed;
+          margin-left:  -100px;
+        }
+        #expers-plan{
+            display: flex;
+            width: 70%;
+            gap: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- header -->
+    <div id="fist">
+        <ul class="uppor">
+            <li>
+                <a  href="https://indianexpress.com/"
+         target="_blank" rel="noopener">English</a>
+        </li>
+        <li>
+            <a  href="https://tamil.indianexpress.com/" 
+            target="_blank" rel="noopener" onclick="ga">தமிழ்</a>
+             </li>
+             <li>
+                 <a class="click-event" 
+              href="https://bengali.indianexpress.com/" target="_blank" rel="noopener" onclick="ga">বাংলা></a>
+             </li>
+             <li>
+                 <a  href="https://malayalam.indianexpress.com/" target="_blank" rel="noopener" onclick="ga;">മലയാളം</a>
+                </li>
+                <li>
+                    <a href="https://www.jansatta.com/" target="_blank" rel="noopener" onclick="ga">हिंदी</a>
+                </li>
+                <li>
+                    <a  href="https://www.loksatta.com/" 
+         target="_blank" rel="noopener" onclick="ga">मराठी</a>
+         </li>
+        </ul>
+       </div>
+        <div id="mane1">
+            <div>
+                <div>
+                    Follow Us:
+                </div>
+                <div class="icon">
+                    <a href=""><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/fb-followus.svg" alt=""></a>
+                    <a href=""><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/twitter-followus.svg" alt=""></a>
+                </div>
+            </div>
+            <div><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/indian-express-logo-n.svg" alt=""><p>Saturday, April 30, 2022</p></div>
+            <div></div>
+        </div>
+        <div class="nav">
+            <div><a href=""><img src="https://tse1.mm.bing.net/th?id=OIP.hH1uJglAAaa931TX8wG3cAHaHF&pid=Api&P=0&w=175&h=168" alt=""></a></div>
+            <div>
+                <a href="Homepase.html">Home</a>  <a href="expres.html">Explained</a> <a href="">Political Pulse</a> <a href="india-news.html">India</a> <a href="">Tech</a> <a href="">Cities</a>
+                <a href="">Opinion</a> <a href="IPL.html">IPL</a> <a href="">Entertainment</a> <a href="expres.html">Health</a> <a href="india-news.html">Parenting</a> <a href="">Premium</a>
+                <a href="audio.html">Audio</a>  
+            </div>
+            <div>
+                <a href="subscribe.html"><span class="sub">Subsctibe</span></a>
+            </div>
+            <div>
+                <a href="sign.html">Sign in</a>
+            </div>
+            <div class="search-form-full" style="display: block;"><div class="search-holder"><div class="closebtn2"><i class="fa-closebtn"></i></div><form role="search" method="get" id="searchform" class="searchform" action="https://indianexpress.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form><span id="searcherr"></span><div class="clear"></div></div></div>
+            <div><a href=""><img src="https://tse4.mm.bing.net/th?id=OIP.NYKiO70QfJjBNwVaf_Y9cgAAAA&pid=Api&P=0&w=180&h=180" alt=""></a></div>
+        </div>
+       
+    <!-- men-expres -->
+    <div>
+        <div id="men-expres">
+            <div>
+                <img class="expl" src="https://tpc.googlesyndication.com/simgad/367188368275824930" alt="">
+            </div>
+            <div class="manexp">
+               <div>
+                   <img class="exs-im" src="https://tpc.googlesyndication.com/simgad/6920534090703922916" alt="">
+                   <p><samp class="red">Home</samp> / Explained</p>
+                   <div class="expres-a"><a href="#"> IDEAS </a> <a href="">ECONOMICS </a> <a href="#">HEALTH </a> <a href="#">POLITICS</a>
+                     <a href="#">CULTRE</a> <a href="#">EVERYDAY  EXPLAINERS</a> <a href="#">GLOBAL</a> <a href="#">SPORTS</a> <a href="#">SCI-TECH</a> <a href="#">CLIMATE</a>
+                    </div>
+                    <hr>
+                    <div id="contor"></div>
+               </div>
+               <div id="expers-plan">
+                <img src="https://media.gettyimages.com/photos/british-prime-minister-boris-johnson-welcomes-japanese-prime-minister-picture-id1395514797?k=20&m=1395514797&s=612x612&w=0&h=gsYWWOInuUDPw8VL3eWYokZDvsZJ0R68SpLgK15IN20=" alt="">
+                <img src="https://media.gettyimages.com/photos/voyager-aircraft-flanked-by-two-typhoons-as-british-prime-minister-picture-id1395522354?k=20&m=1395522354&s=612x612&w=0&h=ZbI_fysq5c67HDkh1oUT5MN1XYEhBPcYarHAuFk2w5w=" alt="">
+               </div>
+               
+            </div>
+            <div>
+                <img  class="expr" src="https://tpc.googlesyndication.com/simgad/367188368275824930" alt="">
+            </div>
+        </div>
+        
+    </div>
+    <div id="conta"></div>
+    <!-- <footer></footer> -->
+    <footer>
+        <div id="footer">
+            <div>
+                <h3 class="head" style="padding-left: 140px;">TRENDING NEWS</h3>
+                <hr>
+                <div id="foot-div1">
+                    <div>
+                        <ul>
+                            <li>Horoscope</li>
+                            <li>Dance Classes For Kids</li>
+                            <li>Mumbai News Live</li>
+                            <li>Russia Ukraine War News Live</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>India</li>
+                            <li>Entertainment News</li>
+                            <li>Narendra Modi Europe Visit Live</li>
+                            <li>Delhi News Live </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Art & Craft classes For Kids</li>
+                            <li>UPSC News</li>
+                            <li>Weather Live </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Fitness Classes For Kids</li>
+                            <li>IPL 2022 News</li>
+                            <li>Bengaluru News Live</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="foot-div2">
+                    <div class="foot-div21">
+                        <div>
+                         <h3 class="head">Follow Us</h3>
+                         <ul class="g-follow-icon g-follow">
+                             <li><a href="https://www.facebook.com/indianexpress" title="Facebook" target="_blank" rel="noopener">
+                                 <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-facebook.svg" width="32" height="32" alt="Facebook">
+                             </a></li>
+                             <li><a href="https://twitter.com/indianexpress" title="Twitter" target="_blank" rel="noopener">
+                                 <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-twitter.svg" width="32" height="32" alt="Twitter">
+                             </a></li>
+                             <li><a href="https://www.linkedin.com/company/indian-express/" title="Linkedin" target="_blank" rel="noopener">
+                                 <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-linkedin.svg" width="32" height="32" alt="Linkedin">
+                             </a></li>
+                             <li><a href="https://www.instagram.com/indianexpress/" title="Instagram" target="_blank" rel="noopener">
+                                 <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-instagram.svg" width="32" height="32" alt="Instagram">
+                             </a></li>
+                         </ul>
+                         <h3 class="head">Download Apps</h3>
+                         <ul class="g-follow-icon">
+                             <li><a href="https://play.google.com/store/apps/details?id=com.indianexpress.android&amp;hl=en" title="Android" target="_blank" rel="noopener"><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-android.svg" width="32" height="32" alt="Android"></a></li>
+                             <li><a href="https://itunes.apple.com/us/app/the-indian-express/id506351833?mt=8" title="iPhone" target="_blank" rel="noopener"><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-apple.svg" width="32" height="32" alt="iPhone"></a></li>
+                         </ul>
+                        </div>
+                        <hr>
+                        <div> 
+                            <ul>
+                         <li><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/newsguard-logo-w.svg" width="120px" height="18px" alt="Newsguard"> </li>
+                         <li><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/newsguard-check.svg" width="20px" height="26px" alt="Newsguard"> </li>
+                         <li> The Indian Express website has been rated GREEN for its credibility and trustworthiness by Newsguard, a global service that rates news sources for their journalistic standards.
+                         </li>
+                        </ul>
+                         </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="foot-div22"> 
+                        <h3 class="head">EXPRESS</h3>
+                        <p>The Indian Express</p>
+                        <p>The Financial Express</p>
+                        <p>Loksatta</p>
+                        <p>Jansatta</p>
+                        <p>The ExpressGroup</p>
+                        <p>Ramnath Goenka Excellence in Joutmalism Awards</p>
+                        <p>Light House Jourmalism</p>
+                    </div>
+                    <div class="foot-div22">
+                        <p>ieTamil.com</p>
+                        <p>ieBangla.com</p>
+                        <p>ieMalayalam.com</p>
+                        <p>inUth</p>
+                        <p>MylnsuranceClub</p>
+                        <p>26/11 Stories of Strength</p>
+                        <p>Online Classes for Kids</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="foot-div22">
+                        <h3>QUICK LINKS</h3>
+                        <p>T&C</p>
+                        <p>Privacy Policy</p>
+                        <p>Advertise with Us</p>
+                        <p>Brand Solutions</p>
+                        <p>Contact Us</p>
+                        <p>Subcribe</p>
+                        <p>Statutory provions on reporting(sexual offenses)</p>
+                        <p>This website follows the DNPA's code of conduct</p>
+                        <p>CSR </p>
+                    </div>    
+                </div>
+                <hr>
+                <div class="g-foot">
+                     <div class="privacy">Copyright © 2022 The Indian Express [P] Ltd. All Rights Reserved </div>
+                     <div class="wp">
+                        <a href="https://vip.wordpress.com/?utm_source=vip_powered_wpcom&amp;utm_medium=web&amp;utm_campaign=VIP%20Footer%20Credit&amp;utm_term=indianexpress.com" rel="noopener" class="powered-by-wpcom" target="_blank" aria-label="Powered by WordPress.com VIP">
+                        <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/vip-powered-logo.png" alt="Powered by WordPress.com VIP" width="187" height="26">
+                        </a></div>
+                      </div>
+ 
+                   </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    expresData=[
+
+        {
+            Image:"https://images.indianexpress.com/2022/05/paddy-express-photo-1200.jpg?w=316",
+            para:"Explained: Farm exports surge to all-time-high, but so do imports",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/modi-1200.jpg?w=316",
+            para: "Explained: What Modi meant by 'FOMO'-and other Internet shorthand and how to pick them up",
+        },
+        {
+            Image:"https://tpc.googlesyndication.com/simgad/502285508059128304?sqp=4sqPyQQ7QjkqNxABHQAAtEIgASgBMAk4A0DwkwlYAWBfcAKAAQGIAQGdAQAAgD-oAQGwAYCt4gS4AV_FAS2ynT4&rs=AOga4qm6_aUsDTbjAiKO0hDPriRjibS4Ag"
+        },
+        {
+            Image: "https://images.indianexpress.com/2022/05/Shigella.jpg?w=316",
+            para:"Explained: What is Shigella, the bacteria that killed a girl after she ate shawarma in Kerala? ",
+        },
+        {
+            Image: "https://images.indianexpress.com/2022/05/Money-n21.jpg?w=316",
+            para:"Explained: Why veterans did not receive their pensions for April",
+
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/SC-1.jpg?w=316",
+            para:"Explained: Why veterans did not receive their pensions for April",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/nawaz.jpg?w=316",
+            para:"Explained: Farm exports surge to all-time-high, but so do imports",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/oil.jpg?w=316",
+            para: "Explained: What Modi meant by 'FOMO'-and other Internet shorthand and how to pick them up",
+        },
+        {
+            Image:"https://tpc.googlesyndication.com/simgad/16570472425556814036",
+            para: "Explained: What Modi meant by 'FOMO'-and other Internet shorthand and how to pick them up",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/sensex.jpg?w=316",
+            para:"Explained: What is Shigella, the bacteria that killed a girl after she ate shawarma in Kerala? ",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/rupee-pixabay-1200-2-1.jpg?w=316",
+            para:"Explained: Why veterans did not receive their pensions for April",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/rbi-7.jpg?w=316",
+            para:"Explained: Why veterans did not receive their pensions for April",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/RBI-1200.jpg?w=316",
+            para:"Explained: Farm exports surge to all-time-high, but so do imports",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/Kim-Marilyn.jpg?w=316",
+            para:"Explained: What is Shigella, the bacteria that killed a girl after she ate shawarma in Kerala? ",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/Covid.jpg?w=316",
+            para: "Explained: What Modi meant by 'FOMO'-and other Internet shorthand and how to pick them up",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/pawan-hans.jpg?w=316",
+            para:"Explained: Why veterans did not receive their pensions for April",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/Grace-Explained.jpg?w=316",
+            para:"Explained: What is Shigella, the bacteria that killed a girl after she ate shawarma in Kerala? ",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/mumbai-sewage.jpg?w=316",
+            para:"Explained: What is Shigella, the bacteria that killed a girl after she ate shawarma in Kerala? ",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/submarine.jpg?w=316",
+            para:"Explained: What is Shigella, the bacteria that killed a girl after she ate shawarma in Kerala? ",
+        },
+        {
+            Image:"https://tpc.googlesyndication.com/simgad/16570472425556814036",
+            para:"Explained: What is Shigella, the bacteria that killed a girl after she ate shawarma in Kerala? ",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/shah.jpg?w=316",
+            para:"Explained: What is Shigella, the bacteria that killed a girl after she ate shawarma in Kerala? ",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/explainer1.jpg?w=316",
+            para:"Explained: What is Shigella, the bacteria that killed a girl after she ate shawarma in Kerala? ",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/Korean-kids-1200.jpg?w=316",
+            para:"Explained: What is Shigella, the bacteria that killed a girl after she ate shawarma in Kerala? ",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/LIC-IPO-everyday.jpg?w=316",
+            para:"Explained: who are the anchos, the initial investors in ana IPO?"
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/coding.jpeg?w=316",
+            para:"Explained: Why ONDC push could boost small retailers online"
+        },
+        {
+          Image:"https://images.indianexpress.com/2022/05/submarine.jpg?w=316",
+          para:"Explained: who are the anchos, the initial investors in ana IPO?"
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/Kim-Marilyn.jpg?w=316",
+            para:"Explained: who are the anchos, the initial investors in ana IPO?"
+        }
+    ];
+
+    expresData.forEach(function(ele){
+      
+        var box=document.createElement("div");
+
+        var imge=document.createElement("img");
+        imge.src=ele.Image;
+
+        var par=document.createElement("p");
+        par.innerText=ele.para;
+
+        box.append(imge, par)
+
+        document.querySelector("#contor").append(box)
+    })
+    
+</script>

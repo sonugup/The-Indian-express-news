@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+    <style>
+        img:hover{
+            overflow: auto;
+            font-size: inherit;
+        }
+        #mane-red{
+            width: 80%;
+            margin: auto;
+            gap: 30px;
+        }
+        .red1{
+            display: flex;
+        }
+        .red1>div{
+            margin: auto;
+            width: 30%;
+            line-height: 30px;
+            font-size: 20px;
+        }
+        .shows{
+            display: flex;
+            gap: 20px;
+            
+        }
+        .shows>div:hover{
+          color: red;
+          cursor: pointer;
+        }
+        .shows>div>div{
+            display: flex;
+            justify-content: space-between;
+        }
+        #recently{
+            display: flex;
+            gap: 20px;
+        }
+        #recently>div:hover{
+            cursor: pointer;
+            color: red;
+        }
+        .red2{
+            display: flex;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            line-height: 30px;
+        }
+        a:hover{
+            color: red;
+        }
+        .m-red{
+            margin: auto;
+            text-align: center;
+        }
+        .expres-a{
+            gap: 20px;
+            padding: 30px;
+            text-align: center;
+        }
+        .expres-a>a{
+           padding: 15px;
+           font-size: 19px;
+        }
+    </style>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<!-- 
+    header -->
+
+    <div id="fist">
+        <ul class="uppor">
+            <li>
+                <a  href="https://indianexpress.com/"
+         target="_blank" rel="noopener">English</a>
+        </li>
+        <li>
+            <a  href="https://tamil.indianexpress.com/" 
+            target="_blank" rel="noopener" onclick="ga">தமிழ்</a>
+             </li>
+             <li>
+                 <a class="click-event" 
+              href="https://bengali.indianexpress.com/" target="_blank" rel="noopener" onclick="ga">বাংলা></a>
+             </li>
+             <li>
+                 <a  href="https://malayalam.indianexpress.com/" target="_blank" rel="noopener" onclick="ga;">മലയാളം</a>
+                </li>
+                <li>
+                    <a href="https://www.jansatta.com/" target="_blank" rel="noopener" onclick="ga">हिंदी</a>
+                </li>
+                <li>
+                    <a  href="https://www.loksatta.com/" 
+         target="_blank" rel="noopener" onclick="ga">मराठी</a>
+         </li>
+        </ul>
+       </div>
+        <div id="mane1">
+            <div>
+                <div>
+                    Follow Us:
+                </div>
+                <div class="icon">
+                    <a href=""><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/fb-followus.svg" alt=""></a>
+                    <a href=""><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/twitter-followus.svg" alt=""></a>
+                </div>
+            </div>
+            <div><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/indian-express-logo-n.svg" alt=""><p>Saturday, April 30, 2022</p></div>
+            <div></div>
+        </div>
+        <div class="nav">
+            <div><a href=""><img src="https://tse1.mm.bing.net/th?id=OIP.hH1uJglAAaa931TX8wG3cAHaHF&pid=Api&P=0&w=175&h=168" alt=""></a></div>
+            <div>
+                <a href="index.html">Home</a>  <a href="expres.html">Explained</a> <a href="">Political Pulse</a> <a href="india-news.html">India</a> <a href="">Tech</a> <a href="">Cities</a>
+                <a href="">Opinion</a> <a href="IPL.html">IPL</a> <a href="">Entertainment</a> <a href="">Health</a> <a href="">Parenting</a> <a href="">Premium</a>
+                <a href="audio.html">Audio</a>  
+            </div>
+            <div>
+                <a href="subscribe.html"><span class="sub">Subsctibe</span></a>
+            </div>
+            <div>
+                <a href="sign-up.html">Sign in</a>
+            </div>
+            <div class="search-form-full" style="display: block;"><div class="search-holder"><div class="closebtn2"><i class="fa-closebtn"></i></div><form role="search" method="get" id="searchform" class="searchform" action="https://indianexpress.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form><span id="searcherr"></span><div class="clear"></div></div></div>
+            <div><a href=""><img src="https://tse4.mm.bing.net/th?id=OIP.NYKiO70QfJjBNwVaf_Y9cgAAAA&pid=Api&P=0&w=180&h=180" alt=""></a></div>
+        </div>
+       
+    <!-- mane-red -->
+    <div id="mane-red">
+        <div class="m-red">
+            <img src="https://tpc.googlesyndication.com/simgad/551736012459782605" alt="">
+        </div>
+        <div class="expres-a"><a href="#"> IDEAS </a> <a href="">ECONOMICS </a> <a href="#">HEALTH </a> <a href="#">POLITICS</a>
+            <a href="#">CULTRE</a> <a href="#">EVERYDAY  EXPLAINERS</a> <a href="#">GLOBAL</a> <a href="#">SPORTS</a> <a href="#">SCI-TECH</a> <a href="#">CLIMATE</a>
+        </div>
+        <div class="red2">
+            <div class="red1">
+                <div><img src="https://images.indianexpress.com/2022/05/Feature-40.jpg?resize=450%2C450&w=450" alt="">
+                </div>
+                <div>
+                    <h2><a href="#">Jodhpur communal clashes, garbage mountain fires, and the Asian Games</a></h2>
+                    <p>What led to the communal clashes in Jodhpur, why landfills tend to catch fire, and why the Asian Games will be held under strict Covid-19 restrictions.</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="https://images.indianexpress.com/2022/05/Feature-39.jpg?resize=450%2C450&w=300" alt="">
+                    <p><a href="#">RBI's candid report, SpiceJet trublence, and new charak Shapath row</a></p>
+                </div>
+                <div>
+                    <img src="https://images.indianexpress.com/2022/05/Feature-38.jpg?resize=450%2C450&w=300" alt="">
+                    <p><a href="#">Behind India's power crisis, severe heat, and students returning to China</a></p>
+                </div>
+            </div>
+        </div>
+            <div class="shows">
+
+            </div>
+            <div id="recently"></div>
+        
+    </div>
+    <!-- <footer></footer> -->
+
+    <footer>
+        <div id="footer">
+            <div>
+                <h3 class="head" style="padding-left: 140px;">TRENDING NEWS</h3>
+                <hr>
+                <div id="foot-div1">
+                    <div>
+                        <ul>
+                            <li>Horoscope</li>
+                            <li>Dance Classes For Kids</li>
+                            <li>Mumbai News Live</li>
+                            <li>Russia Ukraine War News Live</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>India</li>
+                            <li>Entertainment News</li>
+                            <li>Narendra Modi Europe Visit Live</li>
+                            <li>Delhi News Live </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Art & Craft classes For Kids</li>
+                            <li>UPSC News</li>
+                            <li>Weather Live </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Fitness Classes For Kids</li>
+                            <li>IPL 2022 News</li>
+                            <li>Bengaluru News Live</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="foot-div2">
+                    <div class="foot-div21">
+                        <div>
+                         <h3 class="head">Follow Us</h3>
+                         <ul class="g-follow-icon g-follow">
+                             <li><a href="https://www.facebook.com/indianexpress" title="Facebook" target="_blank" rel="noopener">
+                                 <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-facebook.svg" width="32" height="32" alt="Facebook">
+                             </a></li>
+                             <li><a href="https://twitter.com/indianexpress" title="Twitter" target="_blank" rel="noopener">
+                                 <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-twitter.svg" width="32" height="32" alt="Twitter">
+                             </a></li>
+                             <li><a href="https://www.linkedin.com/company/indian-express/" title="Linkedin" target="_blank" rel="noopener">
+                                 <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-linkedin.svg" width="32" height="32" alt="Linkedin">
+                             </a></li>
+                             <li><a href="https://www.instagram.com/indianexpress/" title="Instagram" target="_blank" rel="noopener">
+                                 <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-instagram.svg" width="32" height="32" alt="Instagram">
+                             </a></li>
+                         </ul>
+                         <h3 class="head">Download Apps</h3>
+                         <ul class="g-follow-icon">
+                             <li><a href="https://play.google.com/store/apps/details?id=com.indianexpress.android&amp;hl=en" title="Android" target="_blank" rel="noopener"><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-android.svg" width="32" height="32" alt="Android"></a></li>
+                             <li><a href="https://itunes.apple.com/us/app/the-indian-express/id506351833?mt=8" title="iPhone" target="_blank" rel="noopener"><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-apple.svg" width="32" height="32" alt="iPhone"></a></li>
+                         </ul>
+                        </div>
+                        <hr>
+                        <div> 
+                            <ul>
+                         <li><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/newsguard-logo-w.svg" width="120px" height="18px" alt="Newsguard"> </li>
+                         <li><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/newsguard-check.svg" width="20px" height="26px" alt="Newsguard"> </li>
+                         <li> The Indian Express website has been rated GREEN for its credibility and trustworthiness by Newsguard, a global service that rates news sources for their journalistic standards.
+                         </li>
+                        </ul>
+                         </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="foot-div22"> 
+                        <h3 class="head">EXPRESS</h3>
+                        <p>The Indian Express</p>
+                        <p>The Financial Express</p>
+                        <p>Loksatta</p>
+                        <p>Jansatta</p>
+                        <p>The ExpressGroup</p>
+                        <p>Ramnath Goenka Excellence in Joutmalism Awards</p>
+                        <p>Light House Jourmalism</p>
+                    </div>
+                    <div class="foot-div22">
+                        <p>ieTamil.com</p>
+                        <p>ieBangla.com</p>
+                        <p>ieMalayalam.com</p>
+                        <p>inUth</p>
+                        <p>MylnsuranceClub</p>
+                        <p>26/11 Stories of Strength</p>
+                        <p>Online Classes for Kids</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="foot-div22">
+                        <h3>QUICK LINKS</h3>
+                        <p>T&C</p>
+                        <p>Privacy Policy</p>
+                        <p>Advertise with Us</p>
+                        <p>Brand Solutions</p>
+                        <p>Contact Us</p>
+                        <p>Subcribe</p>
+                        <p>Statutory provions on reporting(sexual offenses)</p>
+                        <p>This website follows the DNPA's code of conduct</p>
+                        <p>CSR </p>
+                    </div>    
+                </div>
+                <hr>
+                <div class="g-foot">
+                     <div class="privacy">Copyright © 2022 The Indian Express [P] Ltd. All Rights Reserved </div>
+                     <div class="wp">
+                        <a href="https://vip.wordpress.com/?utm_source=vip_powered_wpcom&amp;utm_medium=web&amp;utm_campaign=VIP%20Footer%20Credit&amp;utm_term=indianexpress.com" rel="noopener" class="powered-by-wpcom" target="_blank" aria-label="Powered by WordPress.com VIP">
+                        <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/vip-powered-logo.png" alt="Powered by WordPress.com VIP" width="187" height="26">
+                        </a></div>
+                      </div>
+ 
+                   </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    ShowsData=[
+        {
+            Image:"https://images.indianexpress.com/2018/06/three-things-2.jpg?w=300",
+            para:"3 Things",
+            price:"1857"
+        },
+        {
+            Image: "https://images.indianexpress.com/2019/03/express-sports-500x500.jpg?w=300",
+            para:"Express Sports",
+            price:"199"
+        },
+        {
+            Image:"https://images.indianexpress.com/2021/12/Copy-of-our-own-devices-final1.jpg?w=300",
+            para:"Our Own Devices with Nandagopal Rajan",
+            price:"105"
+        },
+        {
+            Image:"https://images.indianexpress.com/2021/09/EXPRESS-CONVERSATIONS.jpg?w=300",
+            para:"Express Conversations",
+            price:"49"
+        },
+    ];
+    RecentlyData=[
+        {
+            Image:"https://images.indianexpress.com/2021/06/Catch-Up-Image.jpg?w=300",
+            pri:"The Catch Up: 5 May"
+        },
+        {
+            Image:"https://images.indianexpress.com/2021/09/Expresso-News-Big-Featured-7.jpg?w=300",
+            pri:"Headlines at 8:30 pm on 5th May 2022"
+        },
+        {
+            Image:"https://images.indianexpress.com/2021/09/Expresso-Business-Big-Featured-2.jpg?w=300",
+            pri: "Business News at 5:30 pm on 5th may"
+        },
+        {
+            Image:"https://images.indianexpress.com/2021/12/Copy-of-our-own-devices-final1.jpg?w=300",
+            pri:"How AI can revolutionse healthcare"
+        }
+    ];
+    ShowsData.forEach(function(ele){
+        var box1=document.createElement("div");
+
+        var imga=document.createElement("img");
+        imga.src=ele.Image;
+
+        var div=document.createElement("div")
+
+        var para=document.createElement("p");
+        para.innerText=ele.para;
+
+        var price=document.createElement("p");
+        price.innerText=ele.price;
+
+        div.append(para, price);
+
+        box1.append(imga, div)
+        document.querySelector(".shows").append(box1)
+    })
+    
+
+    RecentlyData.forEach(function(elem){
+        var box2=document.createElement("div");
+
+        var imga=document.createElement("img");
+        imga.src=elem.Image;
+
+        
+
+        var price=document.createElement("p");
+        price.innerText=elem.pri;
+
+        
+
+        box2.append(imga, price)
+        document.querySelector("#recently").append(box2)
+    })
+    
+</script>

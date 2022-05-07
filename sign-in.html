@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+       body{
+            background-color: rgb(168, 210, 227);
+            background-image:"https://tse3.mm.bing.net/th?id=OIP.m0d8EvwlT5xQ3A-2epZa8AHaEo&pid=Api&P=0&w=273&h=171";
+        }
+        #form{
+            width: 40%;
+            margin:20px auto;
+           background-color: rgb(47, 255, 61);
+           border-radius: 30px;
+            height: 600px;
+            display: grid;
+            padding: 50px;
+            color: blueviolet;text-align: center;
+           
+        }
+        #form>input{
+            margin: 20px;
+            border-radius: 20px;
+            font-size: 25px;
+            background-color: wheat;
+        }
+        a{
+            text-align: center;
+            text-decoration: none;
+            font-size: 30px;
+            color: black;
+           }
+           a:hover{
+               color: blue;
+               
+           }
+    </style>
+</head>
+<body>
+    <form id="form">
+        <h1>Sign In pase</h1>
+        <input id="email" type="email" placeholder="Enter Email">
+        <input id="pass" type="password" placeholder="Enter Password">
+        <input id="sum" type="submit" placeholder="Sign Up">
+        <a href="sign-up.html">Go Back to Sign Up Pase</a>
+    </form>
+</body>
+</html>
+<script>
+    var form=document.querySelector("form");
+    var userData=JSON.parse(localStorage.getItem("userData"))||[]
+
+    form.addEventListener("submit", function(event){
+        event.preventDefault();
+
+        var  data={
+            email:form.email.value,
+            password:form.pass.value,
+        }
+        if(userData===null){
+            alert("please Create an account");
+        }else if(userData.email===data.email && userData.password===data.password){
+            alert("Sign in Successful")
+            localStorage.setItem("dignin", JSON.stringify(userData))
+
+        }else{
+            alert("Uder does not exist")
+        }
+    })
+</script>

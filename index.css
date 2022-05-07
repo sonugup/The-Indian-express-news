@@ -1,0 +1,162 @@
+body{
+    box-sizing: border-box;
+ }
+#mane{
+   position: relative;
+  
+}
+#mane1{
+    display: flex;
+    
+}
+#mane1>div{
+    margin: auto;
+}
+
+.icon>a>img{
+    width: 50px;
+}
+.nav{
+    /* //position:fixed;
+  //  position: -webkit-sticky;
+   // position: sticky; */
+    height: 50px;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    font: bold 18px/21px Helvetica, Arial, sans-serif;
+    margin: 0;
+  
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+     position: sticky; top: 10px; 
+}
+.nav>div{
+    margin: auto;
+    font-size: 10px;
+    padding: 10px;
+    color: white;
+}
+.nav>div>a{
+    padding: 2px;
+    color: white;
+    text-decoration: none;
+}
+.nav>div>a>img{
+    width: 40px;
+}
+.home{
+    display: flex;
+    padding-top: 80px;
+}
+.home>div{
+    margin: auto;
+}
+.home>div>div:nth-child(1){
+    margin: auto;
+    padding-left: 100px;
+}
+.lhs{
+    position: fixed;
+   width: 100%;
+   padding: auto;
+    font: bold 18px/21px Helvetica, Arial, sans-serif;
+   height: 50px;
+}
+.rhs{
+    position: fixed;
+    height: 300px;
+    padding-left:  85%;
+    padding-top: -60px;
+   
+    /* font: bold 18px/21px Helvetica, Arial, sans-serif;
+    margin: 0;
+   // padding: 2px 0 0 12px;
+    position: -webkit-sticky;
+    position: sticky;
+    position: sticky; top: 10px; 
+   // top: -1px; */
+}
+#footer{
+    color: white;
+    padding: 60px;
+    background-color: black;
+}
+#foot-div1{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+#foot-div1>div{
+    width: 25%;
+    display: block;
+    margin: auto;
+}
+.foot-div2{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+.g-follow-icon{
+    display: flex;
+    padding: 10px;
+    width: 40%;
+}
+.foot-div21{
+    width: 25%;
+    padding: 10px;
+    margin: auto;
+}
+
+.line{
+    height: 100;
+    width: 0;
+    border: 1px solid;
+}
+.g-foot{
+    display: flex;
+    justify-content: space-around;
+}
+.foot-div22{
+ padding: 20px;
+}
+.head{
+   
+   color:gray;
+}
+.sub{
+    background-color: orange;
+    border-radius: 15px;
+    padding: 5px;
+}
+.uppor{
+    display: flex;
+    width: 50%;
+    padding: 10px;
+    justify-content: space-around;
+    margin:20px auto ;
+   
+}
+.uppor>li>a{
+   
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.uppor>li{
+    width: 10%;
+    margin: auto;
+    cursor: pointer;
+}
+#fist{
+   
+   background-color:rgb(215, 213, 213);
+}
+hr{
+    width: 80%;
+}
+
+/* imdia */

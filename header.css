@@ -1,0 +1,49 @@
+#mane1{
+    display: flex;
+    
+}
+#mane1>div{
+    margin: auto;
+}
+
+.icon>a>img{
+    width: 50px;
+}
+.nav{
+    /* //position:fixed;
+  //  position: -webkit-sticky;
+   // position: sticky; */
+    height: 50px;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    font: bold 18px/21px Helvetica, Arial, sans-serif;
+    margin: 0;
+  
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+     position: sticky; top: 10px; 
+}
+.nav>div{
+    margin: auto;
+    font-size: 10px;
+    padding: 10px;
+    color: white;
+}
+.nav>div>a{
+    padding: 2px;
+    color: white;
+    text-decoration: none;
+}
+.nav>div>a>img{
+    width: 40px;
+}
+.home{
+    display: flex;
+    padding-top: 80px;
+}
+.home>div{
+    margin: auto;
+}

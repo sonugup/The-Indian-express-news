@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link rel="stylesheet" href="mane-news.css">
+<style>
+    * {
+        box-sizing: border-box;
+     }
+    #mane{
+       position: relative;
+      
+    }
+    #mane1{
+        display: flex;
+        
+    }
+    #mane1>div{
+        margin: auto;
+    }
+    
+    .icon>a>img{
+        width: 50px;
+    }
+    .nav{
+        /* //position:fixed;
+      //  position: -webkit-sticky;
+       // position: sticky; */
+        height: 50px;
+        display: flex;
+        width: 100%;
+        background-color: black;
+        position: relative;
+        font: bold 18px/21px Helvetica, Arial, sans-serif;
+        margin: 0;
+      
+        position: -webkit-sticky;
+        position: sticky;
+        top: -1px;
+         position: sticky; top: 10px; 
+    }
+    .nav>div{
+        margin: auto;
+        font-size: 10px;
+        padding: 10px;
+        color: white;
+    }
+    .nav>div>a{
+        padding: 2px;
+        color: white;
+        text-decoration: none;
+    }
+    .nav>div>a>img{
+        width: 40px;
+    }
+    .home{
+        display: flex;
+        padding-top: 80px;
+    }
+    .home>div{
+        margin: auto;
+    }
+    .home>div>div:nth-child(1){
+        margin: auto;
+        padding-left: 100px;
+    }
+    .lhs{
+        position: fixed;
+       width: 100%;
+       padding: auto;
+        font: bold 18px/21px Helvetica, Arial, sans-serif;
+       height: 50px;
+    }
+    .rhs{
+        position: fixed;
+        height: 300px;
+        padding-left:  85%;
+        padding-top: -60px;
+       
+        /* font: bold 18px/21px Helvetica, Arial, sans-serif;
+        margin: 0;
+       // padding: 2px 0 0 12px;
+        position: -webkit-sticky;
+        position: sticky;
+        position: sticky; top: 10px; 
+       // top: -1px; */
+    }
+    #footer{
+        color: white;
+        padding: 60px;
+        background-color: black;
+    }
+    #foot-div1{
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+    #foot-div1>div{
+        width: 25%;
+        display: block;
+        margin: auto;
+    }
+    .foot-div2{
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+    .g-follow-icon{
+        display: flex;
+        padding: 10px;
+        width: 40%;
+    }
+    .foot-div21{
+        width: 25%;
+        padding: 10px;
+        margin: auto;
+    }
+  
+    .line{
+        height: 100;
+        width: 0;
+        border: 1px solid;
+    }
+    .g-foot{
+        display: flex;
+        justify-content: space-around;
+    }
+    .foot-div22{
+     padding: 20px;
+    }
+    .head{
+       
+       color:gray;
+    }
+    .sub{
+        background-color: orange;
+        border-radius: 15px;
+        padding: 5px;
+    }
+    .uppor{
+        display: flex;
+        width: 50%;
+        padding: 10px;
+        justify-content: space-around;
+        margin:20px auto ;
+       
+    }
+    .uppor>li>a{
+       
+        color: black;
+        font-size: 20px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .uppor>li{
+        width: 10%;
+        margin: auto;
+        cursor: pointer;
+    }
+    #fist{
+       
+       background-color:rgb(215, 213, 213);
+    }
+    hr{
+        width: 80%;
+    }
+    #hm-b{
+        display: flex;
+    }
+   
+</style>
+
+
+<body>
+    <div id="mane">
+      <div id="fist">
+        <ul class="uppor">
+            <li>
+                <a  href="https://indianexpress.com/"
+         target="_blank" rel="noopener">English</a>
+        </li>
+        <li>
+            <a  href="https://tamil.indianexpress.com/" 
+            target="_blank" rel="noopener" onclick="ga">தமிழ்</a>
+             </li>
+             <li>
+                 <a class="click-event" 
+              href="https://bengali.indianexpress.com/" target="_blank" rel="noopener" onclick="ga">বাংলা></a>
+             </li>
+             <li>
+                 <a  href="https://malayalam.indianexpress.com/" target="_blank" rel="noopener" onclick="ga;">മലയാളം</a>
+                </li>
+                <li>
+                    <a href="https://www.jansatta.com/" target="_blank" rel="noopener" onclick="ga">हिंदी</a>
+                </li>
+                <li>
+                    <a  href="https://www.loksatta.com/" 
+         target="_blank" rel="noopener" onclick="ga">मराठी</a>
+         </li>
+        </ul>
+       </div>
+        <div id="mane1">
+            <div>
+                <div>
+                    Follow Us:
+                </div>
+                <div class="icon">
+                    <a href=""><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/fb-followus.svg" alt=""></a>
+                    <a href=""><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/twitter-followus.svg" alt=""></a>
+                </div>
+            </div>
+            <div><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/indian-express-logo-n.svg" alt=""><p>Saturday, April 30, 2022</p></div>
+            <div></div>
+        </div>
+        <div class="nav">
+            <div><a href=""><img src="https://tse1.mm.bing.net/th?id=OIP.hH1uJglAAaa931TX8wG3cAHaHF&pid=Api&P=0&w=175&h=168" alt=""></a></div>
+            <div>
+                <a href="Homepase.html">Home</a>  <a href="expres.html">Explained</a> <a href="">Political Pulse</a> <a href="india-news.html">India</a> <a href="">Tech</a> <a href="">Cities</a>
+                <a href="">Opinion</a> <a href="IPL.html">IPL</a> <a href="">Entertainment</a> <a href="audio.html">Health</a> <a href="india-news.html">Parenting</a> <a href="">Premium</a>
+                <a href="audio.html">Audio</a>  
+            </div>
+            <div>
+                <a href="subscribe.html"><span class="sub">Subsctibe</span></a>
+            </div>
+            <div>
+                <a href="sign.html">Sign in</a>
+            </div>
+            <div class="search-form-full" style="display: block;"><div class="search-holder"><div class="closebtn2"><i class="fa-closebtn"></i></div><form role="search" method="get" id="searchform" class="searchform" action="https://indianexpress.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form><span id="searcherr"></span><div class="clear"></div></div></div>
+            <div><a href=""><img src="https://tse4.mm.bing.net/th?id=OIP.NYKiO70QfJjBNwVaf_Y9cgAAAA&pid=Api&P=0&w=180&h=180" alt=""></a></div>
+        </div>
+        <div class="home">
+            <div  class="lhs"><img  src="https://tpc.googlesyndication.com/simgad/424558263095696519" alt=""></div>
+            <div>
+                <div> <img src="https://tpc.googlesyndication.com/simgad/16905088198655402036" alt=""></div>
+                 <div><img src="https://s0.2mdn.net/simgad/17970549911442476913" alt=""></div>
+            </div>
+            <div class="rhs"><img src="https://tpc.googlesyndication.com/simgad/8299315436852766197?sqp=4sqPyQQ7QjkqNxABHQAAtEIgASgBMAk4A0DwkwlYAWBfcAKAAQGIAQGdAQAAgD-oAQGwAYCt4gS4AV_FAS2ynT4&rs=AOga4qmO0yaqfPcUuH3ocC2xVQmAAvxsMw" alt=""></div>
+        </div>
+   
+    
+    <!-- contaner mane -->
+
+    <div class="container">
+
+        <div class="head row">
+            <div class="headimage left">
+                    <!-- <a href="#">
+                            <img src="http://s2.wp.com/wp-content/themes/vip/indianexpress/images/indian-express-logo.svg" alt="">
+                        </a> -->
+                        <div class="date">
+                            <span> Wednesday, March 6, 2019</span>
+                        </div> 
+                    </div>
+            
+                        <div class="logolinks right">
+                            <ul>
+                                <li><a href="#"> English</a></li>
+                                <li><a href="#"> Today's Paper</a></li>
+                                <li><a href="#"> epaper</a></li>
+                            </ul>
+
+                            </div>
+
+            </div>
+        </div>
+
+
+        <div class="headupdates">
+            <ul>
+                <li><a href="#">  balakot airstrike</a> </li>
+                <li><a href="#">  decision 2019</a> </li>
+                <li><a href="#"> movie reviews</a>  </li>
+                <li><a href="#"> sunday eyes</a> </li>
+                <li><a href="#"> express cartoons</a> </li>
+                <li><a href="#">express data</a> </li>
+            </ul>
+
+        </div>
+
+        <div class="container section1 ">
+            <div class="row"> 
+            <div class= "section1_1 left" >
+                <h3> TOP NEWS</h3>
+                <ul>
+                    <li><a href="#">
+                            Industrial growth slows down to 1.7%, retail inflation rises to 4-month high
+                        </a>
+                            <div class="metadata1">
+                                    by express webdesk
+                                    <span>  4 hours ago </span>
+                                </div>
+                   
+                        </li>
+                   
+                    <li><a href="#">
+                            Industrial growth slows down to 1.7%, retail inflation rises to 4-month high
+                        </a>
+                            <div class="metadata1">
+                                    by express webdesk
+                                    <span>  4 hours ago </span>
+                                </div>
+
+                       </li>
+                    <li><a href="#">
+                            Industrial growth slows down to 1.7%, retail inflation rises to 4-month high
+                        </a>
+                            <div class="metadata1">
+                                    by express webdesk
+                                    <span>  4 hours ago </span>
+                                </div>
+
+                   </li>
+                    <li><a href="#">
+                            Industrial growth slows down to 1.7%, retail inflation rises to 4-month high 
+                        </a>
+                            <div class="metadata1">
+                       
+                                by express webdesk
+                                    <span>  4 hours ago </span>
+                                </div>
+
+                           </li>
+                    <li><a href="#">
+                            Industrial growth slows down to 1.7%, retail inflation rises to 4-month high
+                        </a> 
+                            <div class="metadata1">
+                                    by express webdesk
+                                    <span>  4 hours ago </span>
+                                </div>
+
+                    </li>
+                </ul>
+
+            </div>
+            <div class= "section1_2 left">
+             <span>India bans Boeing 737 Max 8 planes in wake of Ethiopian Airlines crash </span>
+             <a>
+                <img src="https://images.indianexpress.com/2019/03/ethiopian-airlines-759.jpg?w=610&h=340&imflag=true">
+             </a> 
+             <p> 
+                With the move, India joined a growing list of countries to ban Boeing 737 MAX planes from their airspace. The development comes two days after a similar Boeing model flown by Ethiopian Airlines crashed near Addis Ababa, killing all 157 people on board, including four Indians.
+              </p>  
+              
+              <div>
+                <img src="https://images.indianexpress.com/2014/03/Modi-26.jpg?w=475" alt="">
+            </div>
+            </div>
+           
+
+
+            <div class="section1_3 right">
+                <h3 class="row"> opinion </h3>
+             <ul>
+                 <li><a href="#" class="left ">
+                        at of saffron party in 2019 may not ensure failure of BJP project
+                        <img src="https://images.indianexpress.com/2013/12/volumn.jpg?w=60&h=60&crop=1" class="right">
+                 </a>
+                  <div class="metadata1">
+                     by suresh sinha
+                  </div>
+                </li>
+                 <h3 class="row"> podcast</h3>
+                 <li><a href="#" class="left" >
+                        Pulwama 'conspirator' killed, Sharad Pawar, RTI query on demonetisation
+                        <img src="https://images.indianexpress.com/2019/03/12mar-2019-1-site.jpg?w=60&h=60&crop=1" class="right">
+
+                 </a>
+                 <div class="metadata1">
+                        by suresh sinha
+                     </div>
+                    </li>
+             </ul>
+            </div>
+            
+        </div>
+    </div>
+     <div class="boundary" >
+
+     </div>
+
+    <div class="section2 row container">
+        <div class="section2_1 left">
+         <h3> MUST READ</h3>
+         
+         <div class="row">
+         <div class="section2_1_1 left">
+             <img src="https://images.indianexpress.com/2019/03/explained-759.jpg?w=610&h=340&imflag=true">
+               <h4>Explained: Anatomy of Opposition's rainbow coalition in Bihar</h4>
+             <div class="metadata2"> by sukhbir singh </div>
+             <ul>
+                 <li class="row"><a href="#">
+                   <img src="https://images.indianexpress.com/2019/03/jitinprasada.jpg?w=105&h=70&imflag=true" class="left">
+                    <h4 class="right">'Hypothetical question': Congress leader Jitin Prasada amid rumours of joining BJP </h4> 
+                    <span>by express webdesk</span>
+
+                 </a></li>
+                 <li><a href="#">
+                        <img src="https://images.indianexpress.com/2019/03/jitinprasada.jpg?w=105&h=70&imflag=true" class="left">
+                        <h4 class="right">'Hypothetical question': Congress leader Jitin Prasada amid rumours of joining BJP </h4> 
+                        <span>by express webdesk</span>
+                 </a></li>
+                 <li><a href="#">
+                        <img src="https://images.indianexpress.com/2019/03/jitinprasada.jpg?w=105&h=70&imflag=true" class="left">
+                        <h4 class="right">'Hypothetical question': Congress leader Jitin Prasada amid rumours of joining BJP </h4> 
+                        <span>by express webdesk</span>
+                 </a></li>
+                 <li><a href="#">
+                        <img src="https://images.indianexpress.com/2019/03/jitinprasada.jpg?w=105&h=70&imflag=true" class="left">
+                        <h4 class="right">'Hypothetical question': Congress leader Jitin Prasada amid rumours of joining BJP </h4> 
+                        <span>by express webdesk</span>
+                 </a></li>
+             </ul>
+
+         </div>
+         <div class="section2_1_2 right">
+    
+             
+          <ul>
+              <li><a href="#" class="row">
+                    <img src="https://images.indianexpress.com/2019/03/jitinprasada.jpg?w=105&h=70&imflag=true" class="left">
+                    <h4 class="right">'Hypothetical question': Congress leader Jitin Prasada amid rumours of joining BJP </h4> 
+                    <span>by express webdesk</span>    
+            </a></li>
+              <li><a href="#" class="row">
+                    <img src="https://images.indianexpress.com/2019/03/jitinprasada.jpg?w=105&h=70&imflag=true" class="left">
+                    <h4 class="right">'Hypothetical question': Congress leader Jitin Prasada amid rumours of joining BJP </h4> 
+                    <span>by express webdesk</span>
+              </a></li>
+              <li><a href="#" class="row">
+                    <img src="https://images.indianexpress.com/2019/03/jitinprasada.jpg?w=105&h=70&imflag=true" class="left">
+                    <h4 class="right">'Hypothetical question': Congress leader Jitin Prasada amid rumours of joining BJP </h4> 
+                    <span>by express webdesk</span>
+              </a></li>
+              <li><a href="#" class="row">
+                    <img src="https://images.indianexpress.com/2019/03/jitinprasada.jpg?w=105&h=70&imflag=true" class="left">
+                    <h4 class="right">'Hypothetical question': Congress leader Jitin Prasada amid rumours of joining BJP </h4> 
+                    <span>by express webdesk</span>
+              </a></li>
+              <li><a href="#" class="row">
+                    <img src="https://images.indianexpress.com/2019/03/jitinprasada.jpg?w=105&h=70&imflag=true" class="left">
+                    <h4 class="right">'Hypothetical question': Congress leader Jitin Prasada amid rumours of joining BJP </h4> 
+                    <span>by express webdesk</span>
+              </a></li>
+              <li><a href="#" class="row">
+                    <img src="https://images.indianexpress.com/2019/03/jitinprasada.jpg?w=105&h=70&imflag=true" class="left">
+                    <h4 class="right">'Hypothetical question': Congress leader Jitin Prasada amid rumours of joining BJP </h4> 
+                    <span>by express webdesk</span>  
+              </a></li>
+              
+          </ul>
+
+         </div >
+         </div>
+
+        </div>
+        
+        <div class=" section2_2 right ">
+                <h3> Latest News</h3>   
+           <img src="https://images.indianexpress.com/2019/03/sunilarora.jpg?w=610&h=340&imflag=true">
+           <h4> Experts to EC: Not percentage, focus on number of polling booths</h4>
+           <span> by ritika chopra </span>    
+
+           <ul>
+               <li><a href="#" class="row">
+                 <img src="https://images.indianexpress.com/2019/03/pulwama-759.jpg?w=105&h=70&imflag=true" class="left">
+                <h4 class="right"> The shifting battlefields</h4> 
+
+               </a></li>
+               <li><a href="#" class="row">
+                    <img src="https://images.indianexpress.com/2019/03/pulwama-759.jpg?w=105&h=70&imflag=true" class="left">
+                <h4 class="right"> The shifting battlefields</h4> 
+               </a></li>
+               <li><a href="#" class="row">
+                    <img src="https://images.indianexpress.com/2019/03/pulwama-759.jpg?w=105&h=70&imflag=true" class="left">
+                <h4 class="right"> The shifting battlefields</h4> 
+               </a></li>
+               <li><a href="#" class="row">
+                    <img src="https://images.indianexpress.com/2019/03/pulwama-759.jpg?w=105&h=70&imflag=true" class="left">
+                <h4 class="right"> The shifting battlefields</h4> 
+               </a></li>
+               <li><a href="#" class="row"></a></li>
+           </ul>
+              
+           <div>
+               
+               <div>
+                   <div>
+                       <img src="https://tpc.googlesyndication.com/simgad/538855436075691411" alt="">
+                   </div>
+                   <div></div>
+               </div>
+           </div>
+    
+        </div>
+       
+    </div>
+    </div>
+    <div>
+        <h1>
+            Get 100% Cashback offer valid till midnight.</h1>
+            //<img src="https://www.healthians.com/img/campaigns/choose_5.png" alt="">
+            <img src="https://www.healthians.com/img/campaigns/img_docs.png" alt="">
+
+        <img src="https://images.taboola.com/taboola/image/fetch/h_750,w_1500,c_pad,b_auto/http%3A//cdn.taboola.com/libtrc/static/thumbnails/d1cd971a6b446ac0605b62413968d879.jpg" alt="">
+    </div>
+
+   <footer>
+       <div id="footer">
+           <div>
+               <h3 class="head" style="padding-left: 140px;">TRENDING NEWS</h3>
+               <hr>
+               <div id="foot-div1">
+                   <div>
+                       <ul>
+                           <li>Horoscope</li>
+                           <li>Dance Classes For Kids</li>
+                           <li>Mumbai News Live</li>
+                           <li>Russia Ukraine War News Live</li>
+                       </ul>
+                   </div>
+                   <div>
+                       <ul>
+                           <li>India</li>
+                           <li>Entertainment News</li>
+                           <li>Narendra Modi Europe Visit Live</li>
+                           <li>Delhi News Live </li>
+                       </ul>
+                   </div>
+                   <div>
+                       <ul>
+                           <li>Art & Craft classes For Kids</li>
+                           <li>UPSC News</li>
+                           <li>Weather Live </li>
+                       </ul>
+                   </div>
+                   <div>
+                       <ul>
+                           <li>Fitness Classes For Kids</li>
+                           <li>IPL 2022 News</li>
+                           <li>Bengaluru News Live</li>
+                       </ul>
+                   </div>
+               </div>
+               <hr>
+               <div class="foot-div2">
+                   <div class="foot-div21">
+                       <div>
+                        <h3 class="head">Follow Us</h3>
+                        <ul class="g-follow-icon g-follow">
+                            <li><a href="https://www.facebook.com/indianexpress" title="Facebook" target="_blank" rel="noopener">
+                                <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-facebook.svg" width="32" height="32" alt="Facebook">
+                            </a></li>
+                            <li><a href="https://twitter.com/indianexpress" title="Twitter" target="_blank" rel="noopener">
+                                <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-twitter.svg" width="32" height="32" alt="Twitter">
+                            </a></li>
+                            <li><a href="https://www.linkedin.com/company/indian-express/" title="Linkedin" target="_blank" rel="noopener">
+                                <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-linkedin.svg" width="32" height="32" alt="Linkedin">
+                            </a></li>
+                            <li><a href="https://www.instagram.com/indianexpress/" title="Instagram" target="_blank" rel="noopener">
+                                <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-instagram.svg" width="32" height="32" alt="Instagram">
+                            </a></li>
+                        </ul>
+                        <h3 class="head">Download Apps</h3>
+                        <ul class="g-follow-icon">
+                            <li><a href="https://play.google.com/store/apps/details?id=com.indianexpress.android&amp;hl=en" title="Android" target="_blank" rel="noopener"><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-android.svg" width="32" height="32" alt="Android"></a></li>
+                            <li><a href="https://itunes.apple.com/us/app/the-indian-express/id506351833?mt=8" title="iPhone" target="_blank" rel="noopener"><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-apple.svg" width="32" height="32" alt="iPhone"></a></li>
+                        </ul>
+                       </div>
+                       <hr>
+                       <div> 
+                           <ul>
+                        <li><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/newsguard-logo-w.svg" width="120px" height="18px" alt="Newsguard"> </li>
+                        <li><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/newsguard-check.svg" width="20px" height="26px" alt="Newsguard"> </li>
+                        <li> The Indian Express website has been rated GREEN for its credibility and trustworthiness by Newsguard, a global service that rates news sources for their journalistic standards.
+                        </li>
+                       </ul>
+                        </div>
+                   </div>
+                   <div class="line"></div>
+                   <div class="foot-div22"> 
+                       <h3 class="head">EXPRESS</h3>
+                       <p>The Indian Express</p>
+                       <p>The Financial Express</p>
+                       <p>Loksatta</p>
+                       <p>Jansatta</p>
+                       <p>The ExpressGroup</p>
+                       <p>Ramnath Goenka Excellence in Joutmalism Awards</p>
+                       <p>Light House Jourmalism</p>
+                   </div>
+                   <div class="foot-div22">
+                       <p>ieTamil.com</p>
+                       <p>ieBangla.com</p>
+                       <p>ieMalayalam.com</p>
+                       <p>inUth</p>
+                       <p>MylnsuranceClub</p>
+                       <p>26/11 Stories of Strength</p>
+                       <p>Online Classes for Kids</p>
+                   </div>
+                   <div class="line"></div>
+                   <div class="foot-div22">
+                       <h3>QUICK LINKS</h3>
+                       <p>T&C</p>
+                       <p>Privacy Policy</p>
+                       <p>Advertise with Us</p>
+                       <p>Brand Solutions</p>
+                       <p>Contact Us</p>
+                       <p>Subcribe</p>
+                       <p>Statutory provions on reporting(sexual offenses)</p>
+                       <p>This website follows the DNPA's code of conduct</p>
+                       <p>CSR </p>
+                   </div>    
+               </div>
+               <hr>
+               <div class="g-foot">
+                    <div class="privacy">Copyright © 2022 The Indian Express [P] Ltd. All Rights Reserved </div>
+                    <div class="wp">
+                       <a href="https://vip.wordpress.com/?utm_source=vip_powered_wpcom&amp;utm_medium=web&amp;utm_campaign=VIP%20Footer%20Credit&amp;utm_term=indianexpress.com" rel="noopener" class="powered-by-wpcom" target="_blank" aria-label="Powered by WordPress.com VIP">
+                       <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/vip-powered-logo.png" alt="Powered by WordPress.com VIP" width="187" height="26">
+                       </a></div>
+                     </div>
+
+                  </div>
+           </div>
+       </div>
+   </footer>
+
+   <script>
+    indiaData=[
+        {
+            Image:"https://images.indianexpress.com/2022/05/supreme-court-3-1-1.jpg?resize=600,334",
+            par1:"Delhi govt vs centre on administrative services in NCt: SC refers matter to Constitution Bench",
+            par:"MAY 6, 2022 11:35:03 AM",
+            para:"The Supreme Court said an earlier Constitution bench which interpreted Article 239AA, that gives special status to Delhi, requires further examination on the limited question of scope of legislative and executive powers of NCT Delhi with respect to services.",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/02/rahul-gandhi-1200-1-1.jpg?resize=600,334",
+            par1:"‘Science doesn’t lie, Modi does’: Rahul Gandhi on WHO excess deaths report",
+            par:"MAY 6, 2022 11:35:03 AM",
+            para:"47 lakh Indians died due to the Covid pandemic. NOT 4.8 lakh as claimed by the Govt, the Congress leader tweeted on Friday morning. Respect families who've lost loved ones. Support them with the mandated ₹4 lakh compensation."
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/T-S-Tirumurti.jpg?resize=600,334",
+            par1:"‘Kindly don’t patronise us, we know what to do’: Amb Tirumurti responds to Dutch envoy’s tweet on India’s abstention in UNGA on Ukraine",
+            par:"MAY 6, 2022 11:35:03 AM",
+            para:"Since January this year, India has abstained on procedural votes and draft resolutions in the UN Security Council, the General Assembly and the Human Rights Council that deplored Russian aggression against Ukraine.",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/rainfall.jpg?resize=600,334",
+            par1:"Weather News live Updates: No heatwave in Delhi this week, says IMD; PM advises to put heat action plans in place",
+            par:"MAY 6, 2022 11:35:03 AM",
+            para:"Weather News Today, Weather Forecast News, Temperature Today, Heatwave News Today: The India Meteorological Department said no heatwave is predicted this week in Delhi.",
+
+        },
+        {
+            Image:"https://images.indianexpress.com/2021/11/kamra_youtube_7591.jpg?resize=600,334",
+            par1:"NCPCR seeks action against Kunal Kamra for posting ‘doctored’ video of boy singing for PM Modi",
+            par:"MAY 6, 2022 11:35:03 AM",
+            para:"The National Commission for Protection of Child Rights (NCPCR), in a letter to Twitter's grievance officer, said a complaint was received by it regarding Kamra tweeting the doctored video of a minor singing a patriotic song to further his own political agendas.",
+
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/Covid-live.jpg?resize=600,334",
+            par1:"Coronavirus Live Updates: India records 3,545 new Covid-19 cases; Active caseload at 19,688",
+            par:"MAY 6, 2022 11:35:03 AM",
+            para:"Covid-19 Live Updates, Coronavirus News Today, 6 May 2022: Rhe number of infections in China's financial hub of Shanghai has been on a 'continuous downward trend' since April 22, the city's vice major Wu Qing said on Friday",
+
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/03/Tirumurti-2-1.jpg?resize=600,334",
+            par1:"There will be no winning side in Russia-Ukraine conflict, India tells UNSC",
+            par:"MAY 6, 2022 11:35:03 AM",
+            para:"Ever since the commencement of the conflict in Ukraine, India has been consistently calling for complete cessation of hostilities and for pursuing the path of dialogue and diplomacy as the only way out, Tirumurti said.",
+
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/Mann-2.jpg?resize=600,334",
+            par1:"Ease of doing politics: Bhagwant Mann takes a leaf out of Arvind Kejriwal’s public consultation book",
+            par:"MAY 6, 2022 11:35:03 AM",
+            para:"The Punjab government, headed by Chief Minister Bhagwant Mann, has sought views of traders, ranging from small shopkeepers to industrialists, on repealing unnecessary licences and attracting investment.",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/modi-6.jpg?resize=600,334",
+            par1:"Ukraine: Modi & Macron discuss ‘cascading effect’, each’s position",
+            par:"MAY 6, 2022 11:35:03 AM",
+            para:"The tone of India’s statement was in sharp contrast to Delhi’s sharp response to remarks from other European leaders and ministers who, in recent weeks, had conveyed concerns over India not condemning Russia’s actions in Ukraine.",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/Congress-protest.jpg?resize=600,334",
+            par1:"Lynching of 2 tribals in MP: Families of 6 held say accused linked to Bajrang Dal",
+            par:"MAY 6, 2022 11:35:03 AM",
+            para:"The families of some of the six others arrested claimed they were cajoled into joining the raid, which led to the deaths, by people they met at a local wedding. Another accused is a tribal youth whose family does “not know much” about the case.",
+
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/supreme-court-3-1-1.jpg?resize=600,334",
+            par1:"SC appoints retd judge to inquire into illegal Kochi construction case",
+            par:"MAY 6, 2022 11:35:03 AM",
+            para:"While ordering  demolition of four apartment complexes that violated the Coastal Regulation Zone norms in Maradu municipality, the SC had in September 2019 asked the state government to pay within four weeks Rs 25 lakh each to the evicted flat owners.",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/akhilesh-Shivpal-featured.jpg?resize=600,334",
+            par1:"‘Not a member of SP, should strengthen his own party’: Akhilesh takes fresh jibe at Shivpal",
+            par:"MAY 6, 2022 11:35:03 AM",
+            para:"“He has own party and is its national president. The SP gave him symbol only for the elections. When you give symbol to someone, you have to make that person a member (of the party),”Akhilesh Yadav said.",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/heatwave-1-1.jpg?resize=600,334",
+            par1:"Put heat action plans in place after grueling March, April: Prime Minister Narendra Modi advises States, UTs",
+            par:"MAY 6, 2022 11:35:03 AM",
+            para:"The IMD has warned that after respite over the last few days, heatwave conditions are expected over parts of Maharashtra, Vidarbha, Rajasthan, Haryana, UP, Madhya",
+
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/delimitation-panel.jpg?resize=600,334",
+            par1:"Delimitation panel for J&K: 2 seats for Kashmiri Migrants, nominations for PoJK displaced in Assembly",
+            para:"Incidentally, the Delimitation Commission’s final report comes just three days ahead of a scheduled rally of displaced persons from PoJK in Jammu on May 8.",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/Rajnath.jpg?resize=600,334",
+            par1:"Ukraine conflict has lessons for future wars, IAF must gear up: Rajnath Singh",
+            par:"MAY 6, 2022 11:35:03 AM",
+            para:"The defence minister also brought up the issue of defence supplies being under stress due to the Russian invasion of Ukraine and pushed for self reliance in defence.",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/dhulia-collage-1.jpg?resize=600,334",
+            par1:"Collegium recommends names of Justices Sudhanshu Dhulia, Jamshed B Pardiwala for elevation to SC",
+            par:"MAY 6, 2022 11:35:03 AM",
+            para:"The Collegium headed by CJI N V Ramana cleared the names. Other members of the Collegium are Justices U U Lalit, A M Khanwilkar, D Y Chandrachud and L Nageswara Rao.",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/Baghel.jpg?resize=600,334",
+            par1:"Chhattisgarh CM sets off on state-wide yatra as his government battles perception, reality",
+            par:"MAY 6, 2022 11:35:03 AM",
+            para:"Over the last year, Bhupesh Baghel has emerged stronger, putting behind him the constant talk about rotational chief ministership which had dominated the state Congress's politics for a while.",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/Arvind-Kavitha-1200.jpg?resize=600,334",
+            par1:"Eyeing Nizamabad fray, KCR daughter seeks to turn tables on BJP MP over turmeric plank",
+            par:"MAY 6, 2022 11:35:03 AM",
+            para:"The former Nizamabad MP, Kavitha was defeated by Arvind from the constituency in the 2019 Lok Sabha polls.",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/Jignesh.jpg?resize=600,334",
+            par1:"Jignesh Mevani interview: ‘I won’t let the activist Jignesh die… Cong also wants me to be what I am… Rahul wants me to grow as a Dalit leader’",
+            par:"MAY 6, 2022 11:35:03 AM",
+            para:"On Hardik Patel, Mevani says: “We have been good friends, good political colleagues. The only message that I would love to give him is 'Hang on buddy, we will fight it out together'.”",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/Delhi-last-rites.jpeg?resize=600,334",
+            par1:"Validity of models, methodology of data collection questionable: India on WHO Covid deaths report",
+            par:"MAY 6, 2022 11:35:03 AM",
+            para:"According to the report, there were 4.7 million Covid deaths in India -- 10 times the official figures and almost a third of Covid deaths globally.",
+
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/Your-daily-wrap-1.jpg?resize=600,334",
+            par1:"Your Daily Wrap: Hyderabad murder over interfaith marriage, J&K delimitation panel report, and more",
+            par:"MAY 6, 2022 11:35:03 AM",
+            para:"From the J&K Delimitation Commission finalising the order for the Union Territory to Amit Shah’s CAA statement, here are the top stories of the day and more.",
+
+        }, 
+        {
+            Image:"https://images.indianexpress.com/2022/05/chidambaram.jpg?resize=600,334",
+            par1:"Bengal protests against Chidambaram: Legal battles of another kind for Congress",
+            par:"MAY 6, 2022 11:35:03 AM",
+            para:"In the Keventers case, Bengal Cong chief Adhir Ranjan Chowdhury has questioned the sale of more than 46% stake in Metro Dairy, a State-controlled company, to the private firm, saying there was lack of transparency over the deal and question marks over the price fixed for the",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/03/India-Australia.jpg?resize=600,334",
+            par1:"India, Australia discuss ways to combat terrorism",
+            par:"MAY 6, 2022 11:35:03 AM",
+            para:"In the meeting, both sides underlined their commitment to coordinate and collaborate on tackling terrorism in line with the India-Australia Comprehensive Strategic Partnership.",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/Sadhguru-1200.jpg?resize=600,334",
+            par1:"‘Save Soil’ campaign: Sadhguru to address leaders from 195 nations at UNCCD",
+            par:"MAY 6, 2022 11:35:03 AM",
+            para:"The spiritual leader, who is currently on a 100-day lone motorcycle journey through Europe, Central Asia and the Middle East as part of the 'Save Soil' initiative, is the keynote speaker for the 15th session of the Conference of Parties at UNCCD.",
+        }
+
+    ];
+    
+    indiaData.forEach(function(elem){
+        var box=document.createElement("div");
+        box.setAttribute("class","box")
+
+        var div1=document.createElement("div");
+        var imga=document.createElement("img");
+        imga.src=elem.Image;
+
+        var div=document.createElement("div");
+        div.setAttribute("class","box1")
+        var par1=document.createElement("h2");
+        par1.innerText=elem.par1;
+         
+        var par=document.createElement("h6");
+        par.innerText=elem.par;
+
+        var para=document.createElement("p");
+        para.innerText=elem.para;
+         
+        div.append(par1, par, para)
+
+        div1.append(imga)
+        box.append(div1, div)
+        document.querySelector("#conta-india").append(box)
+    })
+</script>

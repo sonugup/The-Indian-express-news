@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL</title>
+</head>
+<style>
+    #ipl-man{
+        margin: auto;
+        width: 75%;
+        display: block;
+        display: flex;
+        gap: 20px;
+    }
+    #cont{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 25px;
+       
+       font-size: 23px;
+        margin: auto;
+       
+    }
+    p{
+        cursor: pointer;
+    }
+    p:hover{
+        color: red;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    #leftp{
+
+        position: fixed;
+        overflow: hidden;
+        margin:90px -190px;
+    }
+    #rightp{
+        margin-top: 20px ;
+        position: fixed;
+        padding: 100px 0px;
+
+    }
+    .imb{
+        display: flex;
+    }
+</style>
+<link rel="stylesheet" href="index.css">
+<body>
+    <div id="fist">
+        <ul class="uppor">
+            <li>
+                <a  href="https://indianexpress.com/"
+         target="_blank" rel="noopener">English</a>
+        </li>
+        <li>
+            <a  href="https://tamil.indianexpress.com/" 
+            target="_blank" rel="noopener" onclick="ga">தமிழ்</a>
+             </li>
+             <li>
+                 <a class="click-event" 
+              href="https://bengali.indianexpress.com/" target="_blank" rel="noopener" onclick="ga">বাংলা></a>
+             </li>
+             <li>
+                 <a  href="https://malayalam.indianexpress.com/" target="_blank" rel="noopener" onclick="ga;">മലയാളം</a>
+                </li>
+                <li>
+                    <a href="https://www.jansatta.com/" target="_blank" rel="noopener" onclick="ga">हिंदी</a>
+                </li>
+                <li>
+                    <a  href="https://www.loksatta.com/" 
+         target="_blank" rel="noopener" onclick="ga">मराठी</a>
+         </li>
+        </ul>
+       </div>
+        <div id="mane1">
+            <div>
+                <div>
+                    Follow Us:
+                </div>
+                <div class="icon">
+                    <a href=""><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/fb-followus.svg" alt=""></a>
+                    <a href=""><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/twitter-followus.svg" alt=""></a>
+                </div>
+            </div>
+            <div><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/indian-express-logo-n.svg" alt=""><p>Saturday, April 30, 2022</p></div>
+            <div></div>
+        </div>
+        <div class="nav">
+            <div><a href=""><img src="https://tse1.mm.bing.net/th?id=OIP.hH1uJglAAaa931TX8wG3cAHaHF&pid=Api&P=0&w=175&h=168" alt=""></a></div>
+            <div>
+                <a href="Homepase.html">Home</a>  <a href="expres.html">Explained</a> <a href="">Political Pulse</a> <a href="india-news.html">India</a> <a href="">Tech</a> <a href="">Cities</a>
+                <a href="">Opinion</a> <a href="IPL.html">IPL</a> <a href="audio.html">Entertainment</a> <a href="">Health</a> <a href="">Parenting</a> <a href="">Premium</a>
+                <a href="audio.html">Audio</a>  
+            </div>
+            <div>
+                <a href="subscribe.html"><span class="sub">Subsctibe</span></a>
+            </div>
+            <div>
+                <a href="sign.html">Sign in</a>
+            </div>
+            <div class="search-form-full" style="display: block;"><div class="search-holder"><div class="closebtn2"><i class="fa-closebtn"></i></div><form role="search" method="get" id="searchform" class="searchform" action="https://indianexpress.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form><span id="searcherr"></span><div class="clear"></div></div></div>
+            <div><a href=""><img src="https://tse4.mm.bing.net/th?id=OIP.NYKiO70QfJjBNwVaf_Y9cgAAAA&pid=Api&P=0&w=180&h=180" alt=""></a></div>
+        </div>
+       
+    <div id="ipl-man">
+        <div><img id="leftp" src="https://tpc.googlesyndication.com/simgad/367188368275824930" alt=""></div>
+        <div>
+           <img src="https://tpc.googlesyndication.com/daca_images/simgad/15978614691227519021" alt="">
+           <hr>
+           <div class="north-east-wrap relative nopadding"><div class="featured-stories" style="background:url(https://images.indianexpress.com/2022/05/dc-vs-srh.jpeg?w=900) no-repeat;background-size:cover;height:400px;width:100%;"></div><div class="northeast-topbox"><h1 itemprop="headline"><a href="https://indianexpress.com/article/sports/ipl/ipl-2022-delhi-hyderabad-7902900/">IPL 2022, DC vs SRH Live Score Updates: Delhi – Hyderabad clash at Mumbai</a></h1></div></div>
+            <div id="cont"></div>
+            <div class="imb">
+                <img src="https://media.gettyimages.com/photos/voyager-aircraft-flanked-by-two-typhoons-as-british-prime-minister-picture-id1395522354?k=20&m=1395522354&s=612x612&w=0&h=ZbI_fysq5c67HDkh1oUT5MN1XYEhBPcYarHAuFk2w5w=" alt="">
+                 <img src="https://media.gettyimages.com/photos/british-prime-minister-boris-johnson-welcomes-japanese-prime-minister-picture-id1395514520?k=20&m=1395514520&s=612x612&w=0&h=l6Z4YvpQx_cITuD8zpwDtMB2M3-9Cr-h5UM2pMluVhc=" alt="">
+            </div>
+           
+        </div>
+        <div><img id="rightp" src="https://tpc.googlesyndication.com/simgad/367188368275824930" alt=""></div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div id="footer">
+            <div>
+                <h3 class="head" style="padding-left: 140px;">TRENDING NEWS</h3>
+                <hr>
+                <div id="foot-div1">
+                    <div>
+                        <ul>
+                            <li>Horoscope</li>
+                            <li>Dance Classes For Kids</li>
+                            <li>Mumbai News Live</li>
+                            <li>Russia Ukraine War News Live</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>India</li>
+                            <li>Entertainment News</li>
+                            <li>Narendra Modi Europe Visit Live</li>
+                            <li>Delhi News Live </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Art & Craft classes For Kids</li>
+                            <li>UPSC News</li>
+                            <li>Weather Live </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Fitness Classes For Kids</li>
+                            <li>IPL 2022 News</li>
+                            <li>Bengaluru News Live</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="foot-div2">
+                    <div class="foot-div21">
+                        <div>
+                         <h3 class="head">Follow Us</h3>
+                         <ul class="g-follow-icon g-follow">
+                             <li><a href="https://www.facebook.com/indianexpress" title="Facebook" target="_blank" rel="noopener">
+                                 <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-facebook.svg" width="32" height="32" alt="Facebook">
+                             </a></li>
+                             <li><a href="https://twitter.com/indianexpress" title="Twitter" target="_blank" rel="noopener">
+                                 <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-twitter.svg" width="32" height="32" alt="Twitter">
+                             </a></li>
+                             <li><a href="https://www.linkedin.com/company/indian-express/" title="Linkedin" target="_blank" rel="noopener">
+                                 <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-linkedin.svg" width="32" height="32" alt="Linkedin">
+                             </a></li>
+                             <li><a href="https://www.instagram.com/indianexpress/" title="Instagram" target="_blank" rel="noopener">
+                                 <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-instagram.svg" width="32" height="32" alt="Instagram">
+                             </a></li>
+                         </ul>
+                         <h3 class="head">Download Apps</h3>
+                         <ul class="g-follow-icon">
+                             <li><a href="https://play.google.com/store/apps/details?id=com.indianexpress.android&amp;hl=en" title="Android" target="_blank" rel="noopener"><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-android.svg" width="32" height="32" alt="Android"></a></li>
+                             <li><a href="https://itunes.apple.com/us/app/the-indian-express/id506351833?mt=8" title="iPhone" target="_blank" rel="noopener"><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/icons/icon-apple.svg" width="32" height="32" alt="iPhone"></a></li>
+                         </ul>
+                        </div>
+                        <hr>
+                        <div> 
+                            <ul>
+                         <li><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/newsguard-logo-w.svg" width="120px" height="18px" alt="Newsguard"> </li>
+                         <li><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/newsguard-check.svg" width="20px" height="26px" alt="Newsguard"> </li>
+                         <li> The Indian Express website has been rated GREEN for its credibility and trustworthiness by Newsguard, a global service that rates news sources for their journalistic standards.
+                         </li>
+                        </ul>
+                         </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="foot-div22"> 
+                        <h3 class="head">EXPRESS</h3>
+                        <p>The Indian Express</p>
+                        <p>The Financial Express</p>
+                        <p>Loksatta</p>
+                        <p>Jansatta</p>
+                        <p>The ExpressGroup</p>
+                        <p>Ramnath Goenka Excellence in Joutmalism Awards</p>
+                        <p>Light House Jourmalism</p>
+                    </div>
+                    <div class="foot-div22">
+                        <p>ieTamil.com</p>
+                        <p>ieBangla.com</p>
+                        <p>ieMalayalam.com</p>
+                        <p>inUth</p>
+                        <p>MylnsuranceClub</p>
+                        <p>26/11 Stories of Strength</p>
+                        <p>Online Classes for Kids</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="foot-div22">
+                        <h3>QUICK LINKS</h3>
+                        <p>T&C</p>
+                        <p>Privacy Policy</p>
+                        <p>Advertise with Us</p>
+                        <p>Brand Solutions</p>
+                        <p>Contact Us</p>
+                        <p>Subcribe</p>
+                        <p>Statutory provions on reporting(sexual offenses)</p>
+                        <p>This website follows the DNPA's code of conduct</p>
+                        <p>CSR </p>
+                    </div>    
+                </div>
+                <hr>
+                <div class="g-foot">
+                     <div class="privacy">Copyright © 2022 The Indian Express [P] Ltd. All Rights Reserved </div>
+                     <div class="wp">
+                        <a href="https://vip.wordpress.com/?utm_source=vip_powered_wpcom&amp;utm_medium=web&amp;utm_campaign=VIP%20Footer%20Credit&amp;utm_term=indianexpress.com" rel="noopener" class="powered-by-wpcom" target="_blank" aria-label="Powered by WordPress.com VIP">
+                        <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/vip-powered-logo.png" alt="Powered by WordPress.com VIP" width="187" height="26">
+                        </a></div>
+                      </div>
+ 
+                   </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+<script>
+   // window.location.href="header.html"
+
+
+
+    IPLData=[
+        {
+            Image:"https://images.indianexpress.com/2022/05/Ponting.jpg?w=316",
+            para:"Watch:Rishabh Pant vs Junior Ponting on the football field",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/04/Delhi-Capitals.jpg?w=316",
+            para:"IPL 2022 DC vs SRH playing XI, match prediction, pitch report: Delhi face a must-win Situation vs",
+
+        },
+        {
+            Image:"https://tpc.googlesyndication.com/daca_images/simgad/11456008698556056644"
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/Untitled-design-20.jpg?w=316",
+            para:"IPL 2022 Speak up, Virat! Dhini's sticks to the tried, tested and trusted",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/rcb-vs-csk-ipl-2022.jpg?w=316",
+            para:"IPL 2022: All round effort takes RCB past CSk",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/virat-kohli-moeen-ali.jpg?w=316",
+            para:"IPL 2022:How Moeen Ali has Virat Kohli's number",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/rcb-ipl-2022.jpg?w=316",
+            para:"IPL 2022 RCB Highlights: Bangalore win by 13 runs",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/04/Kohli-20.jpg?w=316",
+            para:"IPL showed people have different ways to succeed, can't be just one template, says Virat Kohli",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/Untitled-design-18.jpg?w=316",
+            para: "IPL 2022 RCB vs CSK predicted plauing XI, match Pprediction, pitch report: Will both teams made changes",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/EMO-PBKS-GT.jpg?w=316",
+            para:"GT vs PBLS: Fed to the Gills, Liam 'Filler-a-Miller' Livingstone & Bowlet, the Boulder",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/PBKS-GT-2.jpg?w=316",
+            para:"PBKS va GT: Batting first doesn't pay for Gujarat Titans",
+        },
+        {
+            Image:"https://s0.2mdn.net/simgad/18034072324570797382",
+            
+        },
+        {
+           Image:"https://images.indianexpress.com/2022/05/IPL-photo.jpg?w=316",
+           para:"BCCI announces schedule & venues for IPL 2022 final, playoffs", 
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/Vettori-and-Tahir.jpg?w=316",
+            para: "IPL 2022: Players should be allowed to review wide, high no-balls-Daneil Vettoti, Imran Tahir",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/PBKS-GT.jpg?w=316",
+            para: "IPL 2022, GT vs PBKS Highlights: Punjab defeat Gugarat by 8 wickets",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/04/Untitled-design-4-4-1.jpg?w=316",
+            para: "I used to erite down everything in my diary: Sanju Samson recalls gis interactions with Rahul Dravid",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/Virat-Rohit-Jadeja-and-Mayank.jpg?w=316",
+            para: "IPL 2022: From Virat Kohli, Rohit Sharma to MS Dhoni, how the retained players have performed so for",
+        },
+        {
+            Image: "https://images.indianexpress.com/2022/05/Untitled-design-15.jpg?w=316",
+            para: "IPL 2022, GT vs PBKS Highlights: Punjab defeat Gugarat by 8 wickets",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/Mayank-Agarwal-Hardik-Pandya-1.jpg?w=316",
+            para: "IPL 2022 RCB vs CSK predicted plauing XI, match Pprediction, pitch report: Will both teams made changes",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/FAF-MSD.jpg?w=316",
+            para: "IPL 2022, GT vs PBKS Highlights: Punjab defeat Gugarat by 8 wickets",
+        },
+        {
+            Image:"https://tpc.googlesyndication.com/simgad/16570472425556814036",
+
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/Rinku-SIngh.jpg?w=316",
+            para: "IPL 2022: Players should be allowed to review wide, high no-balls-Daneil Vettoti, Imran Tahir",
+
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/Untitled-design-14.jpg?w=316",
+            para:"Way Rinku Singh maintained his calm under pressure was outstanding: KKR skipper luer",
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/EMO-KKR-RR.jpg?w=316",
+            para: "KKR vs RR: Boult gets ir on the shin, Rana wins battle with Ashin again & Rinku flings a man-stole",
+        },
+        {
+            Image: "https://images.indianexpress.com/2022/05/KKR-RR-3.jpg?w=316",
+            para: "IPL 2022: A night for Knights, at last"
+        },
+        {
+            Image:"https://images.indianexpress.com/2022/05/wankhede-stadium.jpg?w=316",
+            para: "Garware Club House wants no. of matches at Wankhede reduced",
+        },
+        {
+            Image: "https://images.indianexpress.com/2022/05/KKR-RR-4.jpg?w=316",
+            para: "IPL 2022 KKR vs RR Highlights: Rinku, Huide Kolkata to 7-wicket win against Rahasthan"
+        },
+
+
+    ];
+
+    IPLData.forEach(function(ele){
+        var box=document.createElement("div");
+
+        var img=document.createElement("img");
+        img.src=ele.Image;
+
+        var par=document.createElement("p");
+        par.innerText=ele.para;
+
+        box.append(img, par)
+        document.querySelector("#cont").append(box)
+    })
+        
+    //window.location.href="footer.html"
+    
+</script>

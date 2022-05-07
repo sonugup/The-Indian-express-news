@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #mane1{
+        display: flex;
+        
+    }
+    #mane1>div{
+        margin: auto;
+    }
+    
+    .icon>a>img{
+        width: 50px;
+    }
+    .nav{
+        /* //position:fixed;
+      //  position: -webkit-sticky;
+       // position: sticky; */
+        height: 50px;
+        display: flex;
+        width: 100%;
+        background-color: black;
+        position: relative;
+        font: bold 18px/21px Helvetica, Arial, sans-serif;
+        margin: 0;
+      
+        position: -webkit-sticky;
+        position: sticky;
+        top: -1px;
+         position: sticky; top: 10px; 
+    }
+    .nav>div{
+        margin: auto;
+        font-size: 10px;
+        padding: 10px;
+        color: white;
+    }
+    .nav>div>a{
+        padding: 2px;
+        color: white;
+        text-decoration: none;
+    }
+    .nav>div>a>img{
+        width: 40px;
+    }
+    .home{
+        display: flex;
+        padding-top: 80px;
+    }
+    .home>div{
+        margin: auto;
+    }
+    .home>div>div:nth-child(1){
+        margin: auto;
+        padding-left: 100px;
+    }
+    .lhs{
+        position: fixed;
+       width: 100%;
+       padding: auto;
+        font: bold 18px/21px Helvetica, Arial, sans-serif;
+       height: 50px;
+    }
+    .rhs{
+        position: fixed;
+        height: 300px;
+        padding-left:  85%;
+        padding-top: -60px;
+       
+        /* font: bold 18px/21px Helvetica, Arial, sans-serif;
+        margin: 0;
+       // padding: 2px 0 0 12px;
+        position: -webkit-sticky;
+        position: sticky;
+        position: sticky; top: 10px; 
+       // top: -1px; */
+    }
+    </style>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="fist">
+        <ul class="uppor">
+            <li>
+                <a  href="https://indianexpress.com/"
+         target="_blank" rel="noopener">English</a>
+        </li>
+        <li>
+            <a  href="https://tamil.indianexpress.com/" 
+            target="_blank" rel="noopener" onclick="ga">தமிழ்</a>
+             </li>
+             <li>
+                 <a class="click-event" 
+              href="https://bengali.indianexpress.com/" target="_blank" rel="noopener" onclick="ga">বাংলা></a>
+             </li>
+             <li>
+                 <a  href="https://malayalam.indianexpress.com/" target="_blank" rel="noopener" onclick="ga;">മലയാളം</a>
+                </li>
+                <li>
+                    <a href="https://www.jansatta.com/" target="_blank" rel="noopener" onclick="ga">हिंदी</a>
+                </li>
+                <li>
+                    <a  href="https://www.loksatta.com/" 
+         target="_blank" rel="noopener" onclick="ga">मराठी</a>
+         </li>
+        </ul>
+       </div>
+        <div id="mane1">
+            <div>
+                <div>
+                    Follow Us:
+                </div>
+                <div class="icon">
+                    <a href=""><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/fb-followus.svg" alt=""></a>
+                    <a href=""><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/twitter-followus.svg" alt=""></a>
+                </div>
+            </div>
+            <div><img src="https://indianexpress.com/wp-content/themes/indianexpress/images/indian-express-logo-n.svg" alt=""><p>Saturday, April 30, 2022</p></div>
+            <div></div>
+        </div>
+        <div class="nav">
+            <div><a href=""><img src="https://tse1.mm.bing.net/th?id=OIP.hH1uJglAAaa931TX8wG3cAHaHF&pid=Api&P=0&w=175&h=168" alt=""></a></div>
+            <div>
+                <a href="">Home</a>  <a href="">Explained</a> <a href="">Political Pulse</a> <a href="">India</a> <a href="">Tech</a> <a href="">Cities</a>
+                <a href="">Opinion</a> <a href="">IPL</a> <a href="">Entertainment</a> <a href="">Health</a> <a href="">Parenting</a> <a href="">Premium</a>
+                <a href="">Audio</a>  
+            </div>
+            <div>
+                <a href="subscribe.html"><span class="sub">Subsctibe</span></a>
+            </div>
+            <div>
+                <a href="sign.html">Sign in</a>
+            </div>
+            <div class="search-form-full" style="display: block;"><div class="search-holder"><div class="closebtn2"><i class="fa-closebtn"></i></div><form role="search" method="get" id="searchform" class="searchform" action="https://indianexpress.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form><span id="searcherr"></span><div class="clear"></div></div></div>
+            <div><a href=""><img src="https://tse4.mm.bing.net/th?id=OIP.NYKiO70QfJjBNwVaf_Y9cgAAAA&pid=Api&P=0&w=180&h=180" alt=""></a></div>
+        </div>
+       
+</body>
+</html>
